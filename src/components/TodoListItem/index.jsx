@@ -4,18 +4,26 @@ import styles from "./styles.module.css";
 
 export default class TodoListItem extends Component {
   state = {
-    done: false
+    done: false,
+    important: false
   };
 
   onLabelClick = () => {
+    this.setState(state => ({
+      done: !state.done
+    }));
+  };
+
+  onMarkImportant = evt => {
+    evt.stopPropagation();
     this.setState({
-      done: true
+      important: !this.state.important
     });
   };
 
   render() {
-    const { label, important = false } = this.props;
-    const { done } = this.state;
+    const { label } = this.props;
+    const { done, important } = this.state;
 
     let classNames = styles.todo_list_item;
 
@@ -23,20 +31,19 @@ export default class TodoListItem extends Component {
       classNames += ` ${styles.done}`;
     }
 
-    const style = {
-      color: important ? "rgb(160, 204, 90)" : "rgb(66, 66, 66)",
-      fontWeight: important ? "bold" : "normal"
-    };
+    if (important) {
+      classNames += ` ${styles.important}`;
+    }
 
     return (
-      <li style={style} className={classNames} onClick={this.onLabelClick}>
+      <li className={classNames} onClick={this.onLabelClick}>
         {label}
         <div className={styles.btn_group}>
           <button className={styles.btn}>
             <img src="/edit.svg" alt="" />
           </button>
-          <button className={styles.btn}>
-            <img src="/danger-symbol.svg" alt="" />
+          <button className={styles.btn} onClick={this.onMarkImportant}>
+            <img src="/important.svg" alt="" />
           </button>
           <button className={styles.btn}>
             <img src="/remove.svg" alt="" />
