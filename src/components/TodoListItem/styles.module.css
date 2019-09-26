@@ -1,0 +1,47 @@
+.todo_list_item {
+    color: gray;
+    border-top: 1px solid greenyellow;
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.todo_list_item:last-of-type {
+    border-bottom: 1px solid greenyellow;
+}
+
+.todo_list_item:hover {
+    background-color: rgb(248, 255, 208);
+}
+
+.btn {
+    width: 23px;
+    height: 23px;
+    background-color: rgb(249, 255, 158);
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: rgb(213, 223, 75);
+}
+
+.btn_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn:active {
+    padding: 0;
+}

@@ -1,0 +1,29 @@
+import React from "react";
+
+import styles from "./styles.module.css";
+
+const TodoListItem = ({ label, important = false }) => {
+  const style = {
+    color: important ? "rgb(160, 204, 90)" : "black",
+    fontWeight: important ? "bold" : "normal"
+  };
+
+  return (
+    <li style={style} className={styles.todo_list_item}>
+      {label}
+      <div className={styles.btn_group}>
+        <button className={styles.btn}>
+          <img src="/edit.svg" alt="" />
+        </button>
+        <button className={styles.btn}>
+          <img src="/danger-symbol.svg" alt="" />
+        </button>
+        <button className={styles.btn}>
+          <img src="/remove.svg" alt="" />
+        </button>
+      </div>
+    </li>
+  );
+};
+
+export default TodoListItem;

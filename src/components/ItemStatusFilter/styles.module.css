@@ -1,0 +1,21 @@
+.btn_group {
+    margin-left: 30px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: rgb(231, 245, 110);
+    height: 100%;
+    width: 60px;
+    padding: 3px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(175, 187, 7);
+}
+
+.btn:active {
+    padding: 0;
+}

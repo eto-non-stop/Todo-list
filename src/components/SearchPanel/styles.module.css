@@ -1,0 +1,11 @@
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.input_search {
+    background-color: rgb(227, 245, 149);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}

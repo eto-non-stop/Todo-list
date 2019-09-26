@@ -1,0 +1,31 @@
+.add_input_form {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.add_input {
+    background-color: rgb(227, 245, 149);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgb(231, 245, 110);
+    border: none;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 65px;
+    margin-bottom: 15px;
+    border: 1px solid green;
+}
+
+.btn:hover {
+    background-color: rgb(175, 187, 7);
+}
+
+.btn:active {
+    padding: 0;
+}
