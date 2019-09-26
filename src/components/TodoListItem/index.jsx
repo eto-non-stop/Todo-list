@@ -1,29 +1,31 @@
-import React from "react";
+import React, { Component } from "react";
 
 import styles from "./styles.module.css";
 
-const TodoListItem = ({ label, important = false }) => {
-  const style = {
-    color: important ? "rgb(160, 204, 90)" : "black",
-    fontWeight: important ? "bold" : "normal"
-  };
+export default class TodoListItem extends Component {
+  render() {
+    const { label, important = false } = this.props;
 
-  return (
-    <li style={style} className={styles.todo_list_item}>
-      {label}
-      <div className={styles.btn_group}>
-        <button className={styles.btn}>
-          <img src="/edit.svg" alt="" />
-        </button>
-        <button className={styles.btn}>
-          <img src="/danger-symbol.svg" alt="" />
-        </button>
-        <button className={styles.btn}>
-          <img src="/remove.svg" alt="" />
-        </button>
-      </div>
-    </li>
-  );
-};
+    const style = {
+      color: important ? "rgb(160, 204, 90)" : "black",
+      fontWeight: important ? "bold" : "normal"
+    };
 
-export default TodoListItem;
+    return (
+      <li style={style} className={styles.todo_list_item}>
+        {label}
+        <div className={styles.btn_group}>
+          <button className={styles.btn}>
+            <img src="/edit.svg" alt="" />
+          </button>
+          <button className={styles.btn}>
+            <img src="/danger-symbol.svg" alt="" />
+          </button>
+          <button className={styles.btn}>
+            <img src="/remove.svg" alt="" />
+          </button>
+        </div>
+      </li>
+    );
+  }
+}
