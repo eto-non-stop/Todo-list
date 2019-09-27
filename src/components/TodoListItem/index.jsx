@@ -21,6 +21,11 @@ export default class TodoListItem extends Component {
     });
   };
 
+  onDeleted = evt => {
+    evt.stopPropagation();
+    this.props.onDeleted();
+  };
+
   render() {
     const { label } = this.props;
     const { done, important } = this.state;
@@ -45,7 +50,7 @@ export default class TodoListItem extends Component {
           <button className={styles.btn} onClick={this.onMarkImportant}>
             <img src="/important.svg" alt="" />
           </button>
-          <button className={styles.btn}>
+          <button className={styles.btn} onClick={this.onDeleted}>
             <img src="/remove.svg" alt="" />
           </button>
         </div>

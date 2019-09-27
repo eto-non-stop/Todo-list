@@ -7,3 +7,9 @@
     padding: 0;
     list-style-type: none;
 }
+
+.delete {
+    color: gray;
+    text-align: center;
+    padding-top: 20px;
+}
