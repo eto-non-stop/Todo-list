@@ -30,3 +30,7 @@
 .btn:active {
     padding: 0;
 }
+
+.btn::-moz-focus-inner {
+    border: 0;
+}

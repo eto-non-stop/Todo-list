@@ -46,6 +46,10 @@
     padding: 0;
 }
 
+.btn::-moz-focus-inner {
+    border: 0;
+}
+
 .todo_list_item.done {
     text-decoration: line-through;
     opacity: 0.7;
