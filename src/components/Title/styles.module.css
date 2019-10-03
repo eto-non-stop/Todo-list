@@ -12,3 +12,13 @@
 .counter {
     color: rgb(152, 158, 129)
 }
+
+@media (max-width: 570px) {
+    .title {
+        font-size: 27px;
+    }
+    .counter {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+}

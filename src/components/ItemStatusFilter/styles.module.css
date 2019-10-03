@@ -42,3 +42,29 @@
 .btn::-moz-focus-inner {
     border: 0;
 }
+
+@media (max-width: 570px) {
+    .btn {
+        width: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .btn {
+        width: 42px;
+        font-size: 11px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 395px) {
+    .btn {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 365px) {
+    .btn {
+        width: 37px;
+    }
+}

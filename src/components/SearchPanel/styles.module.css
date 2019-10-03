@@ -5,3 +5,21 @@
     border-radius: 5px;
     padding: 10px;
 }
+
+@media (max-width: 570px) {
+    .input_search {
+        width: 150px;
+    }
+}
+
+@media (max-width: 365px) {
+    .input_search {
+        width: 130px;
+    }
+}
+
+@media (max-width: 330px) {
+    .input_search {
+        width: 110px;
+    }
+}

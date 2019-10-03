@@ -24,3 +24,30 @@
     width: 100%;
     padding: 0;
 }
+
+@media (max-width: 570px) {
+    .wrapper {
+        width: auto;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        height: 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 10px;
+    }
+}
