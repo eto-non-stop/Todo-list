@@ -6,13 +6,17 @@
     padding: 10px;
 }
 
+.input_search:focus {
+    box-shadow: 0 0 6px 2px rgba(168, 231, 66, 0.5);
+}
+
 @media (max-width: 570px) {
     .input_search {
         width: 150px;
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 370px) {
     .input_search {
         width: 130px;
     }
