@@ -1,7 +1,8 @@
 .add_input_form {
     display: flex;
     justify-content: flex-start;
-    margin-top: 25px;
+    align-items: center;
+    height: 100px;
 }
 
 .add_input {
@@ -9,22 +10,23 @@
     border: none;
     border-radius: 5px;
     padding: 10px;
+    height: 20px;
 }
 
 .btn {
-    background-color: rgb(231, 245, 110);
+    background-color: rgb(184, 211, 140);
     border: none;
     height: 100%;
     margin-left: 10px;
     border-radius: 5px;
     width: 65px;
-    margin-bottom: 15px;
+    height: 40px;
     border: 1px solid green;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: rgb(175, 187, 7);
+    background-color: rgb(161, 204, 133);
 }
 
 .btn:active {

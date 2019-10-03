@@ -2,11 +2,11 @@
     color: rgb(66, 66, 66);
     border-top: 1px solid greenyellow;
     font-size: 20px;
-    width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    width: 100%;
 }
 
 .todo_list_item:last-of-type {
@@ -20,19 +20,12 @@
 .btn {
     width: 23px;
     height: 23px;
-    background-color: rgb(249, 255, 158);
-    border: 1px solid green;
+    border: none;
     border-radius: 5px;
-    margin: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: transparent;
     cursor: pointer;
-}
-
-.btn:hover {
-    background-color: rgb(213, 223, 75);
+    margin: 2px;
+    padding: 0;
 }
 
 .btn_group {
@@ -57,5 +50,5 @@
 
 .todo_list_item.important {
     font-weight: bold;
-    color: rgb(160, 204, 90);
+    color: rgb(107, 161, 18);
 }

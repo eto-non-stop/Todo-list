@@ -1,13 +1,7 @@
-.search {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .input_search {
-    background-color: rgb(244, 255, 194);
+    background: no-repeat url("/search.svg") rgb(244, 255, 194);
     border: none;
+    background-position: 95% 50%;
     border-radius: 5px;
     padding: 10px;
 }

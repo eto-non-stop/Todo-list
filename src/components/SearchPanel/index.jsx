@@ -13,7 +13,6 @@ export default class SearchPanel extends Component {
       <div className={styles.search}>
         <input
           type="text"
-          placeholder="type to search"
           className={styles.input_search}
           value={this.props.term}
           onChange={this.onSearchChange}
