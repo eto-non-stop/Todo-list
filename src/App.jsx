@@ -12,11 +12,7 @@ export default class App extends Component {
   maxId = 100;
 
   state = {
-    todoData: [
-      this.createTodoItem("Drink Coffee"),
-      this.createTodoItem("Make Avesome App"),
-      this.createTodoItem("Have a lunch")
-    ],
+    todoData: [],
     term: "",
     filter: "all"
   };

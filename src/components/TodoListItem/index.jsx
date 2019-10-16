@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import styles from "./styles.module.css";
 
 export default class TodoListItem extends Component {
+  state = {
+    isEdit: false
+  };
   onDeleted = evt => {
     evt.stopPropagation();
     this.props.onDeleted();
@@ -28,11 +31,8 @@ export default class TodoListItem extends Component {
 
     return (
       <li className={classNames} onClick={onToggleDone}>
-        {label}
+        {this.state.isEdit ? <input /> : label}
         <div className={styles.btn_group}>
-          <button className={styles.btn}>
-            <img src="/edit.svg" alt="" />
-          </button>
           <button className={styles.btn} onClick={this.onToggleImportant}>
             <img src="/important.svg" alt="" />
           </button>

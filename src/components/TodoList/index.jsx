@@ -21,7 +21,7 @@ const TodoList = ({ todos, onDeleted, onToggleImportant, onToggleDone }) => {
   return todos.length ? (
     <ul className={styles.ul}>{elements}</ul>
   ) : (
-    <div className={styles.delete}>No more todo</div>
+    <div className={styles.delete}>No todo</div>
   );
 };
 
